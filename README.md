@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package calculate APC (adenoma per colonoscopy) and ADR (adenoma detection rate) from JED data. It has a single function called "apradr".
+This package calculate APC (adenoma per colonoscopy) and ADR (adenoma detection rate) from JED data. It has a single function called "apcadr".
 
 
 ## Installation
