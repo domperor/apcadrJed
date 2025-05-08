@@ -1,27 +1,30 @@
 
-# apcadr
+# apcadrJed
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of apcadr is to ...
+This package calculate APC (adenoma per colonoscopy) and ADR (adenoma detection rate) from JED data. It has a single function called "apradr".
 
-◯★under construction★◯
 
 ## Installation
 
-You can install the development version of apcadr like so:
+You can install the development version of apcadrJed like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+remotes::install_github("domperor/apcadrJed")
+library(apcadrJed)
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example:
 
 ``` r
-library(apcadr)
-## basic example code
+library(apcadrJed)
+data<-(c("腺腫|腺腫|憩室", "憩室|痔核", "特記所見なし", "家族性大腸腺腫症"))
+apcadr(data)
+
+# returns "APC:0.66667, ADR:0.33333"
 ```
 
