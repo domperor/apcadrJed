@@ -1,0 +1,12 @@
+Package: apcadr_JED
+Type: Package
+Title: APC and ADR calculater
+Version: 0.0.1
+Author: Mitsuaki Oura
+Maintainer: Mitsuaki Oura <contact me thru DM of X @domperor>
+Description: calculate APC (adenoma per colonoscopy) and ADR (adenoma detection rate) from JED data
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1

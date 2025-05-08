@@ -1,0 +1,10 @@
+apcadr <- function(x) {
+  split_values <- unlist(strsplit(x, "\\|"))
+  num_adenoma <- sum(grepl("腺腫", split_values))
+  num_positive <- sum(grepl("腺腫", x))
+  apc <- num_adenoma/length(x)
+  adr <- num_positive/length(x)
+  print(paste0("APC:",apc,", ADR:",adr))
+}
+
+ポリポーシスは除く作業が必要
