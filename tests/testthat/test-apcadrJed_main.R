@@ -1,4 +1,10 @@
 test_that("apcadr_works", {
   data<-read.csv("sample_CF_data.csv")
-  expect_equal(apcadr(data$統計_診断), "APC:0.59596, ADR:0.39394")
+  x<-apcadr(data$統計_診断)
+  expect_equal(as.numeric(format(x$APC, digits = 5)), 0.59596)
+  expect_equal(as.numeric(format(x$ADR, digits = 5)), 0.39394)
+  expect_equal(as.numeric(format(x$PPC, digits = 5)), 0.6)
+  expect_equal(as.numeric(format(x$PDR, digits = 5)), 0.4)
+  expect_equal(as.numeric(format(x$ACNDR, digits = 5)), 0.050505)
+  expect_equal(as.numeric(format(x$ACNPC, digits = 5)), 0.060606)
 })
