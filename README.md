@@ -22,9 +22,10 @@ This is a basic example:
 
 ``` r
 library(apcadrJed)
-data<-(c("腺腫|腺腫|憩室", "憩室|痔核", "特記所見なし", "家族性大腸腺腫症"))
-apcadr(data)
+data<-(c("腺腫|腺腫|憩室", "憩室|痔核", "特記所見なし", "家族性大腸腺腫症", "進行大腸癌|ポリープ", "polyp|adenoma"))
+x<-apcadr(data)
 
-# returns "APC:0.66667, ADR:0.33333"
+# prints "APC:0.6, ADR:0.4, PPC:1, PDR:0.66667, ACN DR:0.2, ACN per colonoscopy:0.2"
+# Then you can access each value with x$APC, x$ADR, x$PPC, x$PDR, x$ACNDR and x$ACNPC.
 ```
 
